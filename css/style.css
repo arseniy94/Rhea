@@ -1,0 +1,130 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  margin-top: 70px;
+  margin-left: 740px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main h1 {
+  color: #091e40;
+  font-size: 64px;
+}
+
+.header_logo {
+  font-size: 48px;
+  font-weight: 600;
+  color: #4497f3;
+  margin-left: 155px;
+  cursor: pointer;
+}
+
+.header_nav a {
+  color: #cdcbcb;
+  text-align: center;
+  padding: 10px 31px;
+  font-size: 17px;
+}
+.header_nav a:hover {
+  border: 3px solid #4497f3;
+  color: #4497f3;
+}
+.header_nav a.header_nav__active {
+  color: #4497f3;
+}
+
+.header_nav .icon {
+  display: none;
+}
+
+.header_image {
+  margin-left: -170px;
+  margin-top: 53px;
+  cursor: pointer;
+}
+
+.paradise__title {
+  padding: 160px 100px;
+}
+.paradise__title p {
+  color: #82b4f6;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1560px) {
+  nav {
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  nav {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  nav {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .header_nav a {
+    display: none;
+  }
+
+  .header_nav a.icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #3984f3;
+    font-size: 25px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .header_nav.responsive {
+    position: relative;
+    top: 50px;
+    left: -150px;
+  }
+
+  header.responsive {
+    height: 340px;
+  }
+
+  .header_nav.responsive a .icon {
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+
+  .header_nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
