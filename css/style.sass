@@ -1,64 +1,114 @@
 body
   font-family: 'Nunito Sans', sans-serif
   background: #fff
+  margin: 0
 a
   text-decoration: none
 li
   list-style: none
+  display: inline
 header
   display: flex
-  width: 100%
-  padding-bottom: 70px
+  margin: 70px 160px 90px
+  justify-content: space-between
 nav
   font-family: 'Nunito', sans-serif
-  margin-top: 70px
-  margin-right: 160px
-
 main
   display: flex
+  flex-direction: column
   width: 100%
 main h1
   color: #091e40
   font-size: 68px
-
+main h2
+  color: #091e40
+  font-size: 40px
+p
+  line-height: 30px
 .header_logo
-  flex-basis: 50%
-  margin-top: 70px
-  margin-left: 160px
-  font-size: 48px
+  font-size: 52px
   font-weight: 600
   color: #4497f3
   cursor: pointer
 .header_logo__image
-  width: 48px
+  width: 51px
   height: 48px
-
 .header_nav
-  flex-basis: 50%
-.header_nav a
+  display: flex
+.nav_menu__button
+  border: 3px solid #4497f3
+  color: #4497f3
+  font-size: 20px
+  background: #fff
+  padding: 14px 45px
+  cursor: pointer
+  &:hover
+    color: #fff
+    background: #4497f3
+
+.nav_menu a
   color: #bab8b8
-  text-align: center
   padding: 16px 35px
   font-size: 20px
   &:hover
     color: #4497f3
-  &.header_nav__active
+  &.nav_menu__active
     color: #4497f3
-.header_nav__button
-  border: 3px solid #4497f3
-  color: #4497f3
-  font-size: 20px
-  padding: 16px 45px
-  background: #fff
 
 .paradise
   display: flex
   width: 100%
-.paradise__title
+.paradise_title
   flex-basis: 40%
-  padding: 160px 160px
+  margin: 160px 160px
   & p
-    color: #81858e
+    color: #bab8b8
     font-size: 18px
-.paradise__image
+.paradise_title__branch
+  position: relative
+  right: 210px
+  bottom: 75px
+.paradise_title__button
+  border: 3px solid #4497f3
+  color: #fff
+  font-size: 20px
+  background: #4497f3
+  padding: 13px 30px
+  cursor: pointer
+  margin-top: 70px
+  &:hover
+    color: aqua
+.paradise_image
   flex-basis: 60%
+.wrapper_main
+  display: flex
+  padding: 0 0 200px 0
+.wrapper_main__left
+  height: 100px
+  flex-basis: 68%
+.wrapper_main__right
+  flex-basis: 32%
+  margin-left: 90px
+
+
+.line
+  width: 80px
+  height: 6px
+  background: #3984f3
+  position: relative
+
+.wrapper_main__right p
+  color: #bab8b8
+  font-size: 18px
+  margin-top: 30px
+
+.wrapper_main__right__button
+  border: 3px solid #4497f3
+  color: #fff
+  font-size: 20px
+  background: #4497f3
+  padding: 13px 50px
+  cursor: pointer
+  margin-top: 40px
+
+
