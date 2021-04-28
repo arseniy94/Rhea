@@ -1,96 +1,269 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MyCompany</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header_logo">
-        <img class="header_logo__image" src="images/vector.png" alt="logo" />
-        <span>Rhea</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MyCompany</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header>
+  <div class="header_logo">
+    <img class="header_logo__image" src="images/vector.png" alt="logo" />
+    <span>Rhea</span>
+  </div>
+  <div class="header_nav">
+    <nav class="nav_menu" id="my_header">
+      <ul>
+        <li><a class="nav_menu__active" href="#">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#travel">Destinations</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="nav_menu__button">Sign In</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="paradise">
+    <div class="paradise_title">
+      <h1>
+        Travel around<br />
+        the world
+      </h1>
+      <p>
+        Plan and book your perfect trip with expert advice,<br />
+        travel tips, destination information and<br />
+        inspiration from us.
+      </p>
+      <div class="paradise_title__branch">
+        <img src="images/godong.png" alt="branch" />
+        <button class="paradise_title__button">Sign Up Now</button>
       </div>
-      <div class="header_nav">
-        <nav class="nav_menu" id="my_header">
+    </div>
+    <div class="paradise_image">
+      <img src="images/VectorV.png" alt="paradise" />
+    </div>
+  </div>
+
+
+    <div class="wrapper_main">
+      <div class="wrapper_main__left">
+        <div class="wrapper_main__left__maldives">
+          <img src="images/Layer-2.png" alt="maldives" />
+          <span>aldives</span>
+          <div class="wrapper_main__left__maldives_background">
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="maldives" />
+            <div class="days1"><p> 4 days tour</p></div>
+          </div>
+        </div>
+        <div class="wrapper_main__left__nepal">
+          <img src="images/Layer-3.png" alt="nepal" />
+          <span>Kathmandu, Nepal</span>
+          <div class="wrapper_main__left__nepal_background">
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="nepal" />
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="nepal" />
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="nepal" />
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="nepal" />
+            <img class="star_empty" src="images/Capa-1-copy-4.png" alt="nepal" />
+            <div class="days"><p> 7 days tour</p></div>
+          </div>
+        </div>
+        <div class="wrapper_main__left__indonesia">
+          <img src="images/Layer-5.png" alt="indonesia"/>
+          <span>Raja Ampat, Indonesia</span>
+          <div class="wrapper_main__left__indonesia_background">
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="indonesia" />
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="indonesia" />
+            <img class="star_full" src="images/Capa-1-copy-3.png" alt="indonesia" />
+            <img class="star_empty" src="images/Capa-1-copy-4.png" alt="indonesia" />
+            <img class="star_empty" src="images/Capa-1-copy-4.png" alt="indonesia" />
+            <div class="days"><p> 14 days tour</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper_main__right">
+        <h2>
+          Amazing places to enjoy<br />
+          your travel
+        </h2>
+        <div class="wrapper_main__right__line"></div>
+        <p>
+          Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra<br />
+          dui, varius vehicula ligula nulla sit amet lorem. Aenean in ves-<br />
+          tibulum quam. Cras commodo varius neque, non gravida diam<br />
+          ultrices nec. Cras nulla mauris, fermentum nec libero in.
+        </p>
+        <button class="wrapper_main__right__button">Explore</button>
+      </div>
+    </div>
+
+    <div class="video_main" id="video">
+      <div class="video_main__top">
+        <h2>
+          Featured videos
+        </h2>
+        <div class="fix_line"></div>
+        <p>
+        Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend
+        malesp magna, at imperdiet justo euismod eu. Aliquam vel imperdet<br />
+        mi, et convallis eros. Duis fermentum fringilla nisl at vulputate.
+        Nunc nec lorem faucibus, molestie nisi id, elementum sem. Sed<br />
+        vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis et arcu.
+        </p>
+      </div>
+      <div class="video_main__bottom">
+        <div class="video_main__bottom__fix">
+          <iframe width="1069" height="614" src="https://www.youtube.com/embed/WSu4zd_c9aA" frameborder="0"></iframe>
+        </div>
+        <div class="video_main__bottom__scroll">
           <ul>
-            <li><a class="nav_menu__active" href="#">Home</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Booking</a></li>
+            <li><iframe width="210" height="100" src="https://www.youtube.com/embed/ylkcZgcMiBs" frameborder="0"></iframe><span class="scroll_text">Duis fermentum fringilla nisl.</span></li>
+            <li><iframe width="210" height="100" src="https://www.youtube.com/embed/pcH14CKNKQQ" frameborder="0"></iframe><span class="scroll_text">Nunc nec lorem faucibus, molestie.</span></li>
+            <li><iframe width="210" height="100" src="https://www.youtube.com/embed/I40YGHHu8Qk" frameborder="0"></iframe><span class="scroll_text">Duis fermentum fringilla nisl at.</span></li>
+            <li><iframe width="210" height="100" src="https://www.youtube.com/embed/Xu3FTEmN-eg" frameborder="0"></iframe><span class="scroll_text">Nunc nec lorem faucibus, molestie.</span></li>
+            <li><iframe width="210" height="100" src="https://www.youtube.com/embed/6JnGBs88sL0" frameborder="0"></iframe><span class="scroll_text">Aliquam sodales vitae ex.</span></li>
           </ul>
-        </nav>
-        <div>
-          <button class="nav_menu__button">Sign In</button>
         </div>
       </div>
-    </header>
-
-    <main>
-      <div class="paradise">
-        <div class="paradise_title">
-          <h1>
-            Travel around<br />
-            the world
-          </h1>
-          <p>
-            Plan and book your perfect trip with expert advice,<br />
-            travel tips, destination information and<br />
-            inspiration from us.
-          </p>
-          <div>
-            <button class="paradise_title__button">Sign Up Now</button>
-          </div>
-          <div class="paradise_title__branch">
-            <img src="images/godong.png" alt="branch" />
-          </div>
-        </div>
-
-        <div class="paradise_image">
-          <img src="images/VectorV.png" alt="paradise" />
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="wrapper_main">
-          <div class="wrapper_main__left">
-            <img src="images/Layer-2.png" alt="maldives" />
-            <img src="images/Layer-3.png" alt="nepal" />
-            <img src="images/Layer-5.png" alt="indonesia" />
-          </div>
-          <div class="wrapper_main__right">
-            <h2>
-              Amazing places to enjoy<br />
-              your travel
-            </h2>
-            <div class="line"></div>
+    </div>
+      <div class="travel" id="travel">
+         <div class="travel__top">
+            <h2>Travel categories</h2>
+            <div class="fix_line"></div>
             <p>
-              Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
-              <br />
-              dui, varius vehicula ligula nulla sit amet lorem. Aenean in
-              ves-<br />
-              tibulum quam. Cras commodo varius neque, non gravida diam<br />
-              ultrices nec. Cras nulla mauris, fermentum nec libero in.
+              Maecenas et eros non quam ultricies interdum. Proin ac dolor vel neque ullamcorper
+              blandit vitae et felis. Morbi ante urna, imperdiet vel<br />
+              neque vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed commodo
+              . Nullam ultrices tortor non diam ullamcor-<br />
+            per auctor. In urna tellus, auctor sit amet est ut, scelerisque volutpat diam.
             </p>
-            <button class="wrapper_main__right__button">Explore</button>
+         </div>
+         <div class="travel__bottom">
+             <div class="travel__bottom__food , gg">
+                <img src="images/Layer-18.png" alt="food"/>
+               <div class="travel__bottom__food__overlap">
+                 <img src="images/Layer-4.png" alt="fog"/>
+               </div>
+             </div>
+
+             <div class="travel__bottom__back , gg">
+               <img src="images/Layer-16.png" alt="backpacking"/>
+                 <div class="travel__bottom__back__overlap">
+                     <img src="images/Layer-4.png" alt="fog"/>
+                 </div>
+               <span>Backpacking</span>
+             </div>
+
+              <div class="travel__bottom__beach , gg">
+                <img src="images/Layer-15.png" alt="beaches"/>
+                <div class="travel__bottom__beach__overlap">
+                  <img src="images/Layer-4.png" alt="fog"/>
+                </div>
+               <span>Beaches, coast and island </span>
+             </div>
+
+              <div class="travel__bottom__art , gg">
+                <img src="images/Layer-17.png" alt="art"/>
+                <div class="travel__bottom__art__overlap">
+                  <img src="images/Layer-4.png" alt="fog"/>
+                </div>
+                <span>Art and culture</span>
+              </div>
+
+              <div class="travel__bottom__wild">
+                <img src="images/Layer-19.png" alt="wildlife"/>
+                <div class="travel__bottom__wild__overlap">
+                  <img src="images/Layer-4.png" alt="fog"/>
+                </div>
+                <span>Wildlife and</span>
+              </div>
+         </div>
+      </div>
+      <div class="experiences">
+        <div class="experiences__main">
+          <h2>Traveller's experiences</h2>
+          <div class="fix_line"></div>
+          <p>
+            “Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo, at faucibus enim<br />
+            aliquam eu. Nullam quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec<br />
+            pulvinar libero. Ut elit elit, fringilla a nisi ut, dapibus eleifend quam.”
+          </p>
+          <div class="avatar">
+            <div class="avatar__main">
+              <img id="avatar1" src="images/Layer-3.png" alt="avatar" />
+            </div>
+            <span>Danquixote Law</span>
+            <p>Treveller</p>
+            <div class="fix_line_main">
+              <div class="fix_line1 , line2"></div>
+              <div class="fix_line1 , line3"></div>
+              <div class="fix_line1 , line3"></div>
+              <div class="fix_line1 , line3"></div>
+            </div>
           </div>
+          <div class="avatar__left"><a href="#avatar1"><img src="images/Forma-1-copy.png" alt="left" /></a></div>
+          <div class="avatar__right"><a href="#photo-2.html"><img src="images/Forma-1.png" alt="right" /></a></div>
         </div>
       </div>
-    </main>
+  <div class="reg_img" id="booking">
+    <div class="reg">
+      <div class="reg__welcome">
+        <h2>WE WELL SE YOU</h2>
+        <h1>Enjoy 30% Off On First Trip</h1>
+        <div class="reg_nav">
+          <nav class="reg_nav_menu" id="reg__welcome">
+            <ul>
+              <li><select name="destinations">
+                <option value="destinations">Destinations</option>
+                <option value="the mountains">The mountains</option>
+                <option value="sea">Sea</option>
+              </select> </li>
+              <li><a href="#">Package</a></li>
+              <li><a href="#">Dates<img class="data" src="images/Forma-11.png" alt="right" /></a></li>
+            </ul>
+          </nav>
+          <div>
+            <button class="reg_nav_menu__button">Book Now</button>
+          </div>
+          <div class="Destinations__arrows">&#9650;</div>
+          <div class="Destinations__arrows1">&#9660;</div>
+          <div class="Package__arrows">&#9650;</div>
+          <div class="Package__arrows1">&#9660;</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <footer class="footer">
+    <nav class="nav_menu" id="my_footer">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#travel">Destinations</a></li>
+        <li><a  class="nav_menu__active" href="#booking">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <p>Copyright 2020-2021  <span class="footer__span">Rhea - Travel Around The World</span></p>
+      <div class="footer__image">
+        <a href="#https://www.youtube.com/"><div class="footer__image__bg footer__youtube"><img src="images/Shape-9.png" alt="youtube" /></div></a>
+        <a href="#https://www.facebook.com/"><div class="footer__image__bg footer__facebook"><img src="images/Layer-23.png" alt="facebook" /></div></a>
+        <a href="#https://twitter.com/"><div class="footer__image__bg footer__twitter"><img src="images/Forma-12.png" alt="twitter" /></div></a>
+        <a href="#https://mail.ru/"><div class="footer__image__bg footer__post_office"><img src="images/Forma-13.png" alt="post_office" /></div></a>
+      </div>
+  </footer>
+</main>
 
-    <script src="css/script.js"></script>
-  </body>
+<script src="css/script.js"></script>
+</body>
 </html>

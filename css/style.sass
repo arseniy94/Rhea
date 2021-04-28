@@ -1,12 +1,14 @@
 body
   font-family: 'Nunito Sans', sans-serif
-  background: #fff
+  background: linear-gradient(to left top,#a7e2f0,#fff,#fff)
   margin: 0
-a
+.nav_menu a
   text-decoration: none
-li
+.nav_menu li
   list-style: none
   display: inline
+li
+  list-style: none
 header
   display: flex
   margin: 70px 160px 90px
@@ -17,6 +19,7 @@ main
   display: flex
   flex-direction: column
   width: 100%
+
 main h1
   color: #091e40
   font-size: 68px
@@ -30,6 +33,7 @@ p
   font-weight: 600
   color: #4497f3
   cursor: pointer
+  text-shadow: 0 1px 2px black
 .header_logo__image
   width: 51px
   height: 48px
@@ -37,71 +41,204 @@ p
   display: flex
 .nav_menu__button
   border: 3px solid #4497f3
+  border-radius: 5px
   color: #4497f3
   font-size: 20px
   background: #fff
   padding: 14px 45px
   cursor: pointer
+  margin-left: 20px
   &:hover
-    color: #fff
-    background: #4497f3
+    background: linear-gradient(45deg,#c1ebf3, #a7e2f0)
+    color: #4497f3
+    box-shadow: 0 3px 6px #bab8b8
+    text-shadow: 0 1px 2px #bab8b8
+    border-color: #a7e2f0
 
 .nav_menu a
   color: #bab8b8
   padding: 16px 35px
   font-size: 20px
   &:hover
+    text-shadow: 0 1px 2px black
     color: #4497f3
   &.nav_menu__active
     color: #4497f3
+    text-shadow: 0 1px 2px black
 
 .paradise
   display: flex
   width: 100%
+  justify-content: space-between
 .paradise_title
-  flex-basis: 40%
-  margin: 160px 160px
+  margin: 160px 0 160px 160px
+  position: relative
   & p
     color: #bab8b8
     font-size: 18px
+    margin: 0
+    padding-top: 40px
+    text-shadow: 0 1px 2px #ffffff
+  & h1
+    margin: 0
+    padding-top: 40px
+    line-height: 100%
+
 .paradise_title__branch
   position: relative
-  right: 210px
-  bottom: 75px
+  right: 225px
+  top: 70px
 .paradise_title__button
   border: 3px solid #4497f3
+  border-radius: 5px
   color: #fff
   font-size: 20px
   background: #4497f3
   padding: 13px 30px
   cursor: pointer
-  margin-top: 70px
+  position: absolute
+  left: 225px
+  margin-top: 10px
   &:hover
-    color: aqua
+    background: linear-gradient(45deg,#c1ebf3, #a7e2f0)
+    color: #4497f3
+    box-shadow: 0 3px 6px #bab8b8
+    text-shadow: 0 1px 2px #bab8b8
+    border-color: #a7e2f0
 .paradise_image
-  flex-basis: 60%
+ max-width: 100%
+
 .wrapper_main
   display: flex
-  padding: 0 0 200px 0
+  width: 100%
+  height: 700px
+  justify-content: space-between
 .wrapper_main__left
-  height: 100px
-  flex-basis: 68%
-.wrapper_main__right
-  flex-basis: 32%
-  margin-left: 90px
-
-
-.line
-  width: 80px
-  height: 6px
-  background: #3984f3
+  display: flex
+.wrapper_main__left__maldives
+  padding: 73px 22px 0 0
+  height: 500px
+  width: 200px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    opacity: 0.9
+    padding-top: 0
+    overflow: visible
+  & span
+    color: #ffffff
+    font-size: 20px
+    position: relative
+    bottom: 60px
+    left: 0
+    text-shadow: 0 1px 2px black
+.wrapper_main__left__maldives img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: right
+  border-bottom-right-radius: 15px
+  border-top-right-radius: 15px
+.wrapper_main__left__maldives_background
+  display: flex
+  flex-direction: row
   position: relative
+  bottom: 10px
 
+.wrapper_main__left__nepal
+  padding: 73px 30px 0 0
+  height: 500px
+  width: 370px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    opacity: 0.9
+    padding-top: 0
+    overflow: visible
+  & span
+    color: #ffffff
+    font-size: 20px
+    position: relative
+    bottom: 60px
+    left: 20px
+    text-shadow: 0 1px 2px black
+.wrapper_main__left__nepal img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: right
+  border-radius: 15px
+.wrapper_main__left__nepal_background
+  display: flex
+  flex-direction: row
+  position: relative
+  bottom: 10px
+
+.wrapper_main__left__indonesia
+  padding: 73px 30px 0 0
+  height: 500px
+  width: 370px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    opacity: 0.9
+    padding-top: 0
+    overflow: visible
+  & span
+    color: #ffffff
+    font-size: 20px
+    position: relative
+    bottom: 60px
+    left: 20px
+    text-shadow: 0 1px 2px black
+.wrapper_main__left__indonesia img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: center
+  border-radius: 15px
+.wrapper_main__left__indonesia_background
+  display: flex
+  flex-direction: row
+  position: relative
+  bottom: 10px
+.star_full
+  padding: 3px
+  &:hover
+    background: linear-gradient(#fff,#fff, #4497f3)
+    border-radius: 50%
+.star_empty
+  max-height: 100%
+  max-width: 100%
+  &:hover
+    background: linear-gradient(#fff, #4497f3)
+    border-radius: 50%
+.days
+  color: #bab8b8
+  position: relative
+  left: 115px
+  font-size: 20px
+  text-shadow: 0 1px 2px black
+  bottom: 21px
+.days1
+  color: #bab8b8
+  position: relative
+  left: 55px
+  font-size: 20px
+  text-shadow: 0 1px 2px black
+  bottom: 21px
+
+.wrapper_main__right
+  padding: 26px 160px 0 80px
+.wrapper_main__right__line
+  width: 65px
+  height: 5px
+  background: #3984f3
 .wrapper_main__right p
   color: #bab8b8
   font-size: 18px
   margin-top: 30px
-
+  text-shadow: 0 1px 2px #ffffff
 .wrapper_main__right__button
   border: 3px solid #4497f3
   color: #fff
@@ -110,5 +247,488 @@ p
   padding: 13px 50px
   cursor: pointer
   margin-top: 40px
+  border-radius: 5px
+  &:hover
+    background: linear-gradient(45deg,#a7e2f0,#6bc3e3)
+    color: #4497f3
+    box-shadow: 0 3px 6px #bab8b8
+    text-shadow: 0 1px 2px #bab8b8
+    border-color: #6bc3e3
+
+.video_main
+  display: flex
+  width: 100%
+  flex-direction: column
+.video_main__top
+  margin: auto
+  & p
+    color: #bab8b8
+    font-size: 18px
+    margin: 0
+    padding-top: 40px
+    text-shadow: 0 1px 2px #ffffff
+    text-align: center
+.video_main__top h2
+  text-align: center
+
+.fix_line
+  margin: auto
+  width: 65px
+  height: 5px
+  background: #3984f3
+
+.video_main__bottom
+  display: flex
+  margin: 110px 160px 150px 160px
+.video_main__bottom__fix
+  padding-right: 15px
+
+.video_main__bottom__scroll
+  width: 610px
+  height: 615px
+  overflow: auto
+.video_main__bottom__scroll ul
+  padding: 0
+  margin: 0
+.video_main__bottom__scroll li
+  height: 100px
+  padding: 15px 15px
+  &:hover
+    opacity: 0.9
+    background: rgba(64, 93, 73, 0.09)
+    box-shadow: 0 2px 3px #fff
+.scroll_text
+  padding: 20px 0 20px 20px
+  position: relative
+  bottom: 50px
+  font-size: 1.2em
+  color: #091e40
+  text-shadow: 0 1px 2px #ffffff
+
+.travel
+  display: flex
+  width: 100%
+  flex-direction: column
+.travel__top
+  margin: auto
+  padding-bottom: 80px
+  & p
+    color: #bab8b8
+    font-size: 18px
+    margin: 0
+    padding-top: 40px
+    text-shadow: 0 1px 2px #ffffff
+    text-align: center
+.travel__top h2
+  text-align: center
+
+.travel__bottom
+  display: flex
+  justify-content: space-between
+  padding-bottom: 300px
+.gg
+  margin-right: 25px
+  padding-top: 70px
+  cursor: pointer
+
+.travel__bottom__food
+  height: 500px
+  width: 180px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    padding-top: 0
+    background-position: 0 -40px
+  & span
+    color: #ffffff
+    font-size: 23px
+    position: relative
+    bottom: 60px
+    left: 40px
+    text-shadow: 0 1px 2px black
+.travel__bottom__food img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: left
+
+.travel__bottom__back
+  height: 500px
+  width: 470px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    padding-top: 0
+    background-position: 0 -40px
+  & span
+    color: #ffffff
+    font-size: 23px
+    position: relative
+    bottom: 730px
+    left: 40px
+    text-shadow: 0 1px 2px black
+
+.travel__bottom__back img
+  object-position: -1px -170px
+
+.travel__bottom__beach
+  height: 500px
+  width: 470px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    padding-top: 0
+    background-position: 0 -40px
+  & span
+    color: #ffffff
+    font-size: 23px
+    position: relative
+    bottom: 630px
+    left: 40px
+    text-shadow: 0 1px 2px black
+.travel__bottom__beach img
+  max-width: 100%
+  object-fit: cover
+  object-position: center
+
+.travel__bottom__art
+  height: 500px
+  width: 470px
+  overflow: hidden
+  &:hover
+    transition: 0.6s
+    padding-top: 0
+    background-position: 0 -40px
+  & span
+    color: #ffffff
+    font-size: 23px
+    position: relative
+    bottom: 500px
+    left: 40px
+    text-shadow: 0 1px 2px black
+.travel__bottom__art img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: center
+
+.travel__bottom__wild
+  height: 500px
+  width: 180px
+  overflow: hidden
+  padding-top: 70px
+  cursor: pointer
+  &:hover
+    transition: 0.6s
+    padding-top: 0
+    background-position: 0 -40px
+  & span
+    color: #ffffff
+    font-size: 23px
+    position: relative
+    bottom: 500px
+    left: 40px
+    text-shadow: 0 1px 2px black
+.travel__bottom__wild img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: right top
+
+.travel__bottom__food__overlap
+  position: relative
+  height: 445px
+  bottom: 260px
+  right: 250px
+  width: 700px
+.travel__bottom__food__overlap img
+  height: 555px
+  width: 960px
+  opacity: 0.9
+  transform: rotate(180deg)
+  &:hover
+    opacity: 0
+    transition: 1.6s
+
+.travel__bottom__back__overlap
+  position: relative
+  height: 445px
+  bottom: 650px
+  right: 230px
+.travel__bottom__back__overlap img
+  height: 445px
+  width: 960px
+  opacity: 0.9
+  transform: rotate(180deg)
+  &:hover
+    opacity: 0
+    transition: 1.6s
+
+.travel__bottom__beach__overlap
+  position: relative
+  height: 445px
+  bottom: 380px
+  right: 150px
+  width: 700px
+.travel__bottom__beach__overlap img
+  height: 555px
+  width: 960px
+  opacity: 0.9
+  transform: rotate(180deg)
+  &:hover
+    opacity: 0
+    transition: 1.6s
+
+.travel__bottom__art__overlap
+  position: relative
+  height: 445px
+  bottom: 300px
+  right: 150px
+  width: 700px
+.travel__bottom__art__overlap img
+  height: 555px
+  width: 960px
+  opacity: 0.9
+  transform: rotate(180deg)
+  &:hover
+    opacity: 0
+    transition: 1.6s
+
+.travel__bottom__wild__overlap
+  position: relative
+  height: 445px
+  bottom: 260px
+  right: 250px
+  width: 700px
+.travel__bottom__wild__overlap img
+  height: 555px
+  width: 960px
+  opacity: 0.9
+  transform: rotate(180deg)
+  &:hover
+    opacity: 0
+    transition: 1.6s
+
+.experiences
+  display: flex
+  width: 100%
+  flex-direction: column
+.experiences__main
+  margin: auto
+  padding-bottom: 200px
+  & p
+    color: #bab8b8
+    font-size: 18px
+    margin: 0
+    padding-top: 40px
+    text-shadow: 0 1px 2px #ffffff
+    text-align: center
+.experiences__main h2
+  text-align: center
+.experiences__main span
+  padding: 0 293px 0 307px
+  font-size: 1.3em
+  color: #2b323a
+  text-shadow: 0 1px 2px #091e40
+.avatar
+  margin: 0
+  &
+    p
+      text-align: left
+.fix_line_main
+  display: flex
+  padding-top: 30px
+  justify-content: center
+
+.fix_line1
+  width: 55px
+  height: 4px
+  margin: 8px
+  background: #4497f3
+  &:hover
+    background: #4497f3
+    width: 55px
+    height: 4px
+.line3
+  background: #d4daf5
+  width: 38px
+  height: 3px
+
+
+
+.avatar p
+  color: #2b323a
+  text-shadow: 0 0 0 #2b323a
+  padding: 10px 0 0 350px
+.avatar__left
+  position: relative
+  left: 150px
+  bottom: 100px
+.avatar__right
+  position: relative
+  left: 565px
+  bottom: 140px
+
+.avatar__main
+  height: 115px
+  width: 115px
+  padding: 40px 315px 25px 325px
+.avatar__main img
+  border-radius: 50%
+  height: 100%
+  max-width: 100%
+  object-fit: none
+  object-position: -300px -40px
+
+.reg_img
+  background-image: url("../images/gory_vershiny.jpg")
+.reg
+  display: flex
+  max-width: 100%
+  height: 900px
+  background: linear-gradient(to left top,#8bafe2, #66859b, #204b67, #66859b, #204b67 ,#8bafe2)
+  opacity: 0.75
+  flex-direction: column
+.reg__welcome
+  text-align: center
+  margin: auto
+
+.reg h1
+  color: #ffffff
+  font-size: 3.1em
+  font-family: Nunito
+  text-shadow: 0 1px 2px black
+  margin: 0
+.reg h2
+  color: #ffffff
+  font-size: 2.1em
+  font-family: Nunito
+  text-shadow: 0 1px 2px black
+  margin: 0
+
+.reg_nav
+  display: flex
+  margin: auto
+  padding-top: 70px
+
+.reg_nav_menu__button
+  border: none
+  color: #ffffff
+  font-size: 20px
+  background: #4497f3
+  padding: 20px 90px
+  cursor: pointer
+  margin-left: 20px
+  border-radius: 5px
+  opacity: 10
+  &:hover
+    background-color: rgba(126, 217, 238, 0.15)
+    border: none
+    color: #ffffff
+    box-shadow: 0 3px 6px #a7e2f0
+    text-shadow: 0 1px 2px black
+
+
+.reg_nav_menu select
+  color: #ffffff
+  padding: 18px 170px 18px 30px
+  font-size: 20px
+  background-color: rgba(126, 217, 238, 0.15)
+  border-radius: 5px
+  &:hover
+    text-shadow: 0 2px 4px black
+    color: #ffffff
+    opacity: 0.9
+    border-color: #a7e2f0
+    box-shadow: 0 3px 6px #a7e2f0
+.reg_nav_menu a
+  color: #ffffff
+  padding: 18px 170px 18px 30px
+  font-size: 20px
+  background-color: rgba(126, 217, 238, 0.15)
+  border-radius: 5px
+  &:hover
+    text-shadow: 0 2px 4px black
+    color:  #ffffff
+    opacity: 0.9
+    border-color: #a7e2f0
+    box-shadow: 0 3px 6px #a7e2f0
+
+.reg_nav a
+  text-decoration: none
+.reg_nav_menu li
+  list-style: none
+  display: inline
+  padding: 15px
+.data
+  position: relative
+  left: 130px
+.Destinations__arrows
+  position: relative
+  font-size: 0.7em
+  color: #ffffff
+  right: 970px
+  top: 18px
+  cursor: pointer
+.Destinations__arrows1
+  position: relative
+  font-size: 0.7em
+  color: #ffffff
+  right: 981px
+  top: 32px
+  cursor: pointer
+.Package__arrows
+  position: relative
+  font-size: 0.7em
+  color: #ffffff
+  right: 681px
+  top: 18px
+  cursor: pointer
+.Package__arrows1
+  position: relative
+  font-size: 0.7em
+  color: #ffffff
+  right: 692px
+  top: 32px
+  cursor: pointer
+
+.footer
+  margin: auto
+  padding-top: 50px
+  text-align: center
+.footer p
+  margin: 0
+  padding-top: 20px
+  font-family: Verdana
+  color: #2b323a
+
+.footer__span
+  color: rgba(163, 159, 176, 0.7)
+.footer__image__bg
+  border-radius: 50%
+  background: #4497f3
+  height: 20px
+  width: 20px
+  margin: 5px
+  padding: 10px
+  position: relative
+.footer__youtube
+  top: 10px
+  left: 420px
+.footer__facebook
+  bottom: 35px
+  left: 480px
+.footer__twitter
+  bottom: 80px
+  left: 540px
+.footer__post_office
+  bottom:  126px
+  left: 600px
+
+
+
+
+
+
 
 
